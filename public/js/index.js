@@ -52,5 +52,7 @@ $(window).ready(() => {
         $('.modal').slideDown(200)
     }
 
-
+    $('button[modal]').click(() => {
+        $('.modal').slideDown(200)
+    })
 })
