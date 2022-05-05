@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,900;1,100;1,200;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/adaptation.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="modal">
+        <div class="modal-wrapper">
+            <div class="wrapper-form">
+                <div class="close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="form-wp">
+                    <div class="title">Оставьте заявку на получение каталога наших работ и цен. Вышлем каталог на E-mail через пять минут.</div>
+
+                    <label>Введите имя</label>
+                    <input type="text" id="name">
+
+                    <label>Введите E-mail</label>
+                    <input type="text" id="email">
+
+                    <label>Введите номер телеона</label>
+                    <input type="number" id="phone">
+
+                    <button id="modal_send">Отправить</button>
+
+                    <div class="text">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="content">
+            <div class="header-wrapper">
+                <div class="wrapper-logo">
+                    <img src="image/logo.jpg" alt="">
+                </div>
+
+                <ul class="wrapper-menu">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#company">О компании</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+
+                <div class="wrapper-burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="header_mobile">
+    <div class="header_mobile-wrapper">
+        <ul class="wrapper-menu">
+            <li><a href="">Главная</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Почему мы</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">Преимущества</a></li>
+            <li><a href="">Галерея</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</div>
+
+    <div class="main" id="main">
+        <div class="content">
+            <div class="main-wrapper">
+                <div class="title">ГРУЗОПЕРЕВОЗКИ</div>
+                <div class="description">Любые грузоперевозки по России и странам СНГ  от 100кг до 100 тонн попутными и отдельными машинами, перевозки догрузом, сборным грузом, негабаритные перевозки до 100тонн</div>
+                <div class="buttons">
+                    <button onclick="show_modal()">Расчитать стоимость</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ourCompany" id="company">
+        <div class="content">
+            <div class="ourCompany-wrapper">
+                <div class="wrapper-image">
+                    <img src="image/bg-ourCompany.jpg" alt="">
+                </div>
+                <div class="wrapper-info">
+
+                    <div class="title">О НАШЕЙ КОМПАНИИ</div>
+
+                    <div class="description">ООО «ТЭК КУБ» рада приветствовать Вас и предложить сотрудничество в области грузоперевозок! Транспортно - экспедиционная компания «КУБ» на рынке грузоперевозок с 2017 года и на сегодняшний день является одним из лидеров рынка грузоперевозок в России. </div>
+
+                    <button onclick="show_modal()">УЗНАТЬ ПОДРОБНЕЕ</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="companyDescription">
+        <div class="content">
+            <div class="companyDescription-wrapper">
+
+                <div class="text">Наша специализация - междугородние перевозки  мелких и крупных партий грузов, как отдельными машинами, так и попутными, сборными, негабаритными грузами грузоподъемностью от 100 кг до 100 тонн. На данный момент перевезли уже в общей сложности более 945млн тонн груза.</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="ourWork">
+        <div class="content">
+            <div class="ourWork-wrapper">
+                <div class="wrapper-title">ПОСМОТРИТЕ ПРИМЕРЫ РАБОТ, <br> <span>ВЫПОЛНЕННЫЕ НАМИ</span></div>
+
+                <div class="wrapper-works">
+                    <div class="element">
+                        <img src="image/ourWorks/el1.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el2.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el3.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el4.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el5.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el6.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el7.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el8.png" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                    <div class="element">
+                        <img src="image/ourWorks/el9.jpg" alt="">
+                        <div class="element-wrapper">
+                            <div class="title">Название проекта</div>
+                            <div class="description">Небольшое описание проекта нужно тут написать в 2 -3 строчки. Тогда будет выглядеть красиво</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="ourPartner">
+        <div class="content">
+            <div class="ourPartner-wrapper">
+                <div class="wrapper-title">Наши партнеры</div>
+
+                <div class="wrapper-slider">
+                    <div class="slider-wp">
+                        <div class="slide">
+                            <img src="image/partner/part1.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part2.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part3.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part4.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part5.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part6.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part7.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part8.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image/partner/part9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_form" id="advantages">
+        <div class="content">
+            <div class="contact_form-wrapper">
+                <div class="wrapper-title">МЫ ЖДЕМ ВАС <br>
+                    <span>ПОСЕТИТЕ НАШУ КОМПАНИЮ</span></div>
+
+                <div class="wrapper-textarea">
+                    <div class="textarea-info">
+                        <div class="info">
+                            <img src="image/icons/speedometr.png" alt="">
+                            <div class="text">
+                                <div class="title">Максимально оперативная обработка заявок</div>
+                                <div class="description">Рассмотрение заявки клиента в самые кратчайшие сроки</div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <img src="image/icons/idea.png" alt="">
+                            <div class="text">
+                                <div class="title">Еще преимущества работы с вами</div>
+                                <div class="description">Транспортировка грузов мелким, средним и крупнотоннажным автотранспортом  </div>
+                            </div>
+                        </div>
+
+                        <div class="info">
+                            <img src="image/icons/404error.png" alt="">
+                            <div class="text">
+                                <div class="title">Еще одно преимущества работы с вами</div>
+                                <div class="description">Доставка точно по адресу</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="textarea-form">
+                        <div class="form-wrapper">
+                            <div class="title">Оставьте заявку</div>
+
+                            <div class="text">Введите имя</div>
+                            <input id="name_form" placeholder="Ваше имя" type="text">
+
+                            <div class="text">Телефон</div>
+                            <input id="phone_form" placeholder="Телефон" type="number">
+
+                            <button id="callback">оставить заявку</button>
+
+                            <div class="description">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews" id="reviews">
+        <div class="content">
+            <div class="reviews-wrapper">
+                <div class="wrapper-title">100% КЛИЕНТОВ ДОВОЛЬНЫ РАБОТОЙ </div>
+                <div class="wrapper-pretitle">Посмотрите отзывы наших покупателей</div>
+
+                <div class="wrapper-review">
+
+                    <div class="review">
+
+                        <div class="text">
+                            <div class="name">Транзит Прикамья, ООО</div>
+                            <div class="rev">
+                                Работаем с компанией регулярно. Слаженная работа, логисты всегда на связи. Оплата четко в срок, без напоминаний. Отдельная благодарность Ольге, профессионал своего дела, компетентный логист. Удачи и процветания! Рекомендую к сотрудничеству.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="review">
+
+                        <div class="text">
+                            <div class="name">Ибрагимова Л.Ш. ИП</div>
+                            <div class="rev">
+                                Отличный Заказчик и надежный партнер!!! Работа на высшем уровне, оперативность, мобильность. Все вовремя и без проблем. Оплата моментальная. Рекомендую! Надеемся на дальнейшее сотрудничество! Удачи Вам и процветания!!!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="text">
+                            <div class="name">АГРОЛИДЕР, ООО</div>
+                            <div class="rev">
+                                Профессионально, качественно и оперативно, выполнили сложный рейс!!! Спасибо огромное Елене и водителю Лещеву Г.Г. , успехов Вашей компании и отличных заказов!!!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review">
+
+                        <div class="text">
+                            <div class="name">ЮвиТранс, ООО</div>
+                            <div class="rev">
+                                Рекомендуем как надежного перевозчика! Подача авто на погрузку вовремя, доставка без опоздания, водитель всегда на связи! Надеемся на дальнейшее сотрудничество! Отдельное спасибо Елене !!!!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact_us">
+        <div class="content">
+            <div class="contact_us-wrapper">
+
+                <div class="wrapper-image">
+                    <img src="image/bg-contact_us.jpg" alt="">
+                </div>
+                <div class="wrapper-form">
+                    <div class="form-wp">
+                        <div class="title">СВЯЖИТЕСЬ С НАМИ</div>
+                        <div class="description">Оставьте заявку прямо на сайте</div>
+
+                        <div class="text">Введите имя</div>
+                        <input id="name_contact" placeholder="Ваше имя" type="text">
+
+                        <div class="text">Введите E-mail</div>
+                        <input id="email_contact" placeholder="E-mail" type="text">
+
+                        <div class="text">Ваш комментарий или вопрос</div>
+                        <input id="messages_contact" placeholder="Ваш вопрос" type="text">
+
+                        <button id="send_lead_comments">оставить заявку</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="content">
+            <div class="contact-wrapper">
+                <div class="wrapper-title">НАШИ КОНТАКТЫ</div>
+                <div class="wrapper-body">
+                    <div class="map">
+                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_imeni_repina_35/YUoYdARkT0APQFtsfXR3eHhiYw==/?ll=53.235305%2C56.871265&utm_medium=mapframe&utm_source=maps&z=15.18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица имени Репина, 35 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUFJOA8lA" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-wrapper">
+                            <div class="title">Контакты</div>
+                            <div class="email">
+                                <img src="image/icons/email_icon.png" alt="">
+                                <div class="text"><a href="mail:9225224747@mail.ru">9225224747@mail.ru</a></div>
+                            </div>
+
+                            <div class="address">
+                                <img src="image/icons/map_icon.png" alt="">
+                                <div class="text"><a href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_imeni_repina_35/YUoYdARkT0APQFtsfXR3eHhiYw==/?ll=53.235305%2C56.871265&z=15.18">УР, г Ижевск ул Репина д 35 корп 1 офис 5</a></div>
+                            </div>
+
+                            <div class="phone">
+                                <img src="image/icons/phone_icon.png" alt="">
+                                <div class="text"><a href="tel:88005502047">88005502047</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <hr>
+        <div class="content">
+            <div class="footer-wrapper">
+                <div class="logotype">
+                    <img src="image/logo_footer.jpg" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#company">О компании</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+
+                <ul class="menu">
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
+</html>

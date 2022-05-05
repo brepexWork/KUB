@@ -1,0 +1,298 @@
+@media screen and (max-width: 1300px) {
+  .content {
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .ourCompany {
+    &-wrapper {
+      .wrapper-info {
+        width: 350px;
+      }
+    }
+  }
+
+  .ourWork {
+    &-wrapper {
+      .wrapper-works {
+        justify-content: space-around;
+        .element {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  .contact_form {
+    &-wrapper {
+      .wrapper-title {
+      }
+
+      .wrapper-textarea {
+        display: block;
+        .textarea-info {
+          width: 90%;
+          margin: auto;
+          .info {
+          }
+        }
+
+        .textarea-form {
+          margin: auto;
+          margin-top: 50px;
+          width: 90%;
+          .form-wrapper {
+            .title {
+            }
+
+            .text {
+            }
+
+            input {
+            }
+            button {
+            }
+
+            .description {
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+
+  .ourPartner {
+    &-wrapper {
+      .wrapper-slider {
+        .slider-wp {
+          .swiper-slide-next {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  header {
+    .header-wrapper {
+      .wrapper-logo {
+      }
+
+      .wrapper-menu {
+        display: none;
+      }
+
+      .wrapper-burger {
+        display: block;
+      }
+    }
+  }
+
+  .ourCompany {
+    &-wrapper {
+      flex-direction: column;
+      .wrapper-image {
+        width: 90%;
+      }
+      .wrapper-info {
+        transform: translate(0);
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .reviews {
+    .reviews-wrapper {
+      .wrapper-review {
+        .review {
+          width: 90%;
+          .avatar {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  .contact_us {
+    &-wrapper {
+      position: relative;
+      position: relative;
+      .wrapper-image {
+        background: url("../image/bg-contact_us.jpg") no-repeat center / cover;
+        background-color: rgba(255, 255, 255, 0.64);
+        background-blend-mode: screen;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        filter: blur(4px);
+        img {
+          display: none;
+        }
+      }
+
+      .wrapper-form {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+      }
+    }
+  }
+
+  .contact {
+    &-wrapper {
+      .wrapper-title {
+      }
+
+      .wrapper-body {
+        .map {
+          width: 80%;
+        }
+        .card {
+          position: relative;
+          display: block;
+          margin: auto;
+          top: 0;
+          left: 0;
+          margin-top: 40px;
+          &-wrapper {
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    .main-wrapper {
+      .title {
+      }
+
+      .description {
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+        button {
+          &:first-child {
+          }
+          &:last-child {
+            margin-left: 0;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .ourWork {
+    &-wrapper {
+      .wrapper-title {
+      }
+
+      .wrapper-works {
+        justify-content: space-around;
+        .element {
+          width: 90%;
+          img {
+          }
+          &-wrapper {
+            .title {
+            }
+            .description {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ourCompany {
+    &-wrapper {
+      .wrapper-image {
+        width: 100%;
+      }
+      .wrapper-info {
+        width: 90%;
+        padding: 40px 15px;
+        .title {
+        }
+        .description {
+        }
+
+        button {
+        }
+      }
+    }
+  }
+
+  .contact_us {
+    &-wrapper {
+      .wrapper-form {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        .form-wp {
+          padding: 10px;
+          .description {
+          }
+          input {
+          }
+          .text {
+          }
+          button {
+          }
+        }
+      }
+    }
+  }
+
+  .modal {
+    .modal-wrapper {
+      .wrapper-form {
+        width: 90%;
+        .close {
+
+        }
+        .form-wp {
+          padding: 15px;
+          input {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .reviews {
+    .reviews-wrapper {
+      .wrapper-review {
+        .review {
+          display: block;
+          .avatar {
+            margin: auto;
+            margin-bottom: 20px;
+          }
+          .text {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
