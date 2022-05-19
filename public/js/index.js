@@ -55,4 +55,8 @@ $(window).ready(() => {
     $('button[modal]').click(() => {
         $('.modal').slideDown(200)
     })
+
+    $('.allServices .service').click((e) => {
+        $(e.currentTarget).find('.description').toggle(300)
+    })
 })

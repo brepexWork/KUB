@@ -7,3 +7,23 @@
     font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
   }
 }
+
+@mixin title($color: #696969) {
+  font-weight: 500;
+  @include adaptiv-font(36, 24);
+  text-align: center;
+  position: relative;
+  color: $color;
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 65px;
+    height: 3px;
+    background: $color;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: -20px;
+  }
+}
