@@ -385,7 +385,6 @@ header {
       .service {
         cursor: pointer;
         margin-top: 40px;
-        display: none;
         .title {
           display: flex;
           align-items: center;
@@ -413,6 +412,11 @@ header {
           padding: 10px;
           border-left: 3px solid grey;
           border-bottom: 3px solid grey;
+          display: none;
+          @include adaptiv-font(16, 12);
+          &:first-child {
+            display: block;
+          }
           .text {
             line-height: 1.3;
             font-weight: 300;
