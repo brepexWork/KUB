@@ -42,11 +42,8 @@ body {
         top: 20px;
         right: 10px;
         width: 30px;
+        height: 30px;
         cursor: pointer;
-        &:hover {
-          transform: rotate(180deg);
-          transition: 0.5s all ease;
-        }
         span {
           width: 30px;
           height: 2px;
@@ -115,7 +112,7 @@ header {
     align-items: center;
     .wrapper-logo {
       width: 60%;
-      max-width: 55px;
+      max-width: 150px;
       img {
         width: 100%;
       }
@@ -385,11 +382,16 @@ header {
       .service {
         cursor: pointer;
         margin-top: 40px;
+        &:first-child {
+          .description {
+            display: block;
+          }
+        }
         .title {
           display: flex;
           align-items: center;
           .box {
-            background: grey;
+            background: rgb(237, 122, 0);
             width: 40px;
             height: 40px;
             margin-right: 15px;
@@ -410,8 +412,8 @@ header {
         }
         .description {
           padding: 10px;
-          border-left: 3px solid grey;
-          border-bottom: 3px solid grey;
+          border-left: 3px solid rgb(237, 122, 0);
+          border-bottom: 3px solid rgb(237, 122, 0);
           display: none;
           @include adaptiv-font(16, 12);
           &:first-child {
@@ -439,25 +441,40 @@ header {
       @include title();
     }
 
-    .wrapper-slider {
-      width: 90%;
-      height: 300px;
-      position: relative;
-      overflow: hidden;
-      padding-top: 50px;
-      margin: auto;
-      margin-top: 50px;
-      .slider-wp {
-        display: flex;
-        position: absolute;
-        .slide {
-          width: 150px;
-          transition: 0.5s all ease;
-          height: 300px;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+    .wrapper-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .arrow {
+        width: 5%;
+        cursor: pointer;
+        &:first-child {
+          transform: rotate(180deg);
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .wrapper-slider {
+        width: 85%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 50px;
+        margin: auto;
+        margin-top: 50px;
+        .slider-wp {
+          display: flex;
+          position: absolute;
+          .slide {
+            width: 150px;
+            transition: 0.5s all ease;
+            height: 200px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
           }
         }
       }
@@ -576,28 +593,31 @@ header {
       text-align: center;
     }
 
-    .wrapper-review {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      .review {
+    .wrapper-container {
+      position: relative;
+      width: 90%;
+      margin: auto;
+      height: 200px;
+      margin-top: 60px;
+      overflow: hidden;
+      .wrapper-review {
         display: flex;
-        width: 40%;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 40px;
-        .text {
-          width: 90%;
-          .name {
-            font-weight: bold;
-            color: #333333;
-            margin-bottom: 15px;
-            @include adaptiv-font(18,18);
-          }
+        position: absolute;
+        .review {
+          .text {
+            width: 90%;
+            .name {
+              font-weight: bold;
+              color: #333333;
+              margin-bottom: 15px;
+              @include adaptiv-font(18,14);
+            }
 
-          .rev {
-            line-height: 1.4;
-            font-weight: 300;
+            .rev {
+              line-height: 1.4;
+              font-weight: 300;
+              @include adaptiv-font(16, 12);
+            }
           }
         }
       }
