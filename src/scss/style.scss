@@ -593,30 +593,45 @@ header {
       text-align: center;
     }
 
-    .wrapper-container {
-      position: relative;
-      width: 90%;
-      margin: auto;
-      height: 200px;
-      margin-top: 60px;
-      overflow: hidden;
-      .wrapper-review {
-        display: flex;
-        position: absolute;
-        .review {
-          .text {
-            width: 90%;
-            .name {
-              font-weight: bold;
-              color: #333333;
-              margin-bottom: 15px;
-              @include adaptiv-font(18,14);
-            }
-
-            .rev {
-              line-height: 1.4;
-              font-weight: 300;
-              @include adaptiv-font(16, 12);
+    .wrapper-wp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .arrow {
+        width: 5%;
+        cursor: pointer;
+        &:first-child {
+          transform: rotate(-180deg);
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .wrapper-container {
+        position: relative;
+        width: 85%;
+        margin: auto;
+        height: 200px;
+        margin-top: 60px;
+        overflow: hidden;
+        .wrapper-review {
+          display: flex;
+          position: absolute;
+          .review {
+            .text {
+              width: 90%;
+              .name {
+                font-weight: bold;
+                color: #333333;
+                margin-bottom: 15px;
+                @include adaptiv-font(18,14);
+              }
+  
+              .rev {
+                line-height: 1.4;
+                font-weight: 300;
+                @include adaptiv-font(16, 12);
+              }
             }
           }
         }

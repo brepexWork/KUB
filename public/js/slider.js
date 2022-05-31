@@ -34,9 +34,13 @@ const swiper_review = new Swiper('.reviews .wrapper-container', {
     wrapperClass: 'wrapper-review',
     slidesPerView: 1,
     loop: true,
+    navigation: {
+        prevEl: '#review_prev',
+        nextEl: '#review_next'
+    },
     breakpoints: {
         800: {
-            slidesPerView: 2.1,
+            slidesPerView: 2,
         }
     }
 })
