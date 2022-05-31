@@ -110,6 +110,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .wrapper-phone {
+      display: flex;
+      align-items: center;
+      a {
+        text-decoration: underline;
+      }
+      img {
+        width: 30px;
+        margin-right: 10px;
+      }
+    }
     .wrapper-logo {
       width: 60%;
       max-width: 150px;
