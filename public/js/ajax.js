@@ -7,16 +7,17 @@ $('#send_lead_comments').click((e) => {
     let name = $('.contact_us #name_contact').val()
     let email = $('.contact_us #email_contact').val()
     let message = $('.contact_us #messages_contact').val()
+    let phone = $('.contact_us #phone_contact').val()
 
     if(name == '' || name.length < 1) {
         alert('Введите корректное имя')
         return false
     }
 
-    let valid_email = re_email.test(email)
+    let valid_phone = re_phone.test(phone)
 
-    if(email == '' || !valid_email) {
-        alert('Введите корректный email')
+    if(phone == '' || !valid_phone) {
+        alert('Введите корректный номер телефона')
         return false
     }
 

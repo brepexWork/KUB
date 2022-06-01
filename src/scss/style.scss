@@ -508,6 +508,7 @@ header {
         @include adaptiv-font(38, 32);
         margin-top: 20px;
       }
+      text-transform: uppercase;
     }
 
     .wrapper-textarea {
@@ -546,6 +547,7 @@ header {
           .title {
             @include adaptiv-font(20,20);
             color: white;
+            text-align: center;
             font-weight: 300;
           }
 
