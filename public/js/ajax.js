@@ -9,15 +9,11 @@ $('#send_lead_comments').click((e) => {
     let message = $('.contact_us #messages_contact').val()
     let phone = $('.contact_us #phone_contact').val()
 
-    if(name == '' || name.length < 1) {
-        alert('Введите корректное имя')
-        return false
-    }
-
+    let valid_email = re_email.test(email)
     let valid_phone = re_phone.test(phone)
 
-    if(phone == '' || !valid_phone) {
-        alert('Введите корректный номер телефона')
+    if((!(valid_email) || email == '') && (!(valid_phone) || phone == '')) {
+        alert('Введите email или телефон')
         return false
     }
 
@@ -92,13 +88,8 @@ $('#modal_send').click((e) => {
         return false
     }
 
-    if(!(valid_email) || email == '') {
-        alert('Введите корректный email')
-        return false
-    }
-
-    if(!(valid_phone) || phone == '') {
-        alert('Введите корректный email')
+    if((!(valid_email) || email == '') && (!(valid_phone) || phone == '')) {
+        alert('Введите email или телефон')
         return false
     }
 

@@ -8,6 +8,16 @@
   }
 }
 
+@mixin adaptive-padding($maxPadding, $minPadding) {
+  $maxWidth: 1200;
+  $addSize: $maxPadding - $minPadding;
+  $maxWidth: $maxWidth - 320;
+  padding: calc(#{$minPadding + px} + #{$addSize} * ((1300px - 320px) / #{$maxWidth})) 0px;
+  @media screen and (max-width: 1300px) {
+    padding: calc(#{$minPadding + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth})) 0px;
+  }
+}
+
 @mixin title($color: #696969) {
   font-weight: 500;
   @include adaptiv-font(36, 24);

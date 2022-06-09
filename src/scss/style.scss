@@ -17,6 +17,23 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.alert {
+  background: #28a745;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  display: none;
+  &-wrapper {
+    .text { 
+      @include adaptive-padding(40, 10);
+      color: white;
+      text-align: center;
+      @include adaptiv-font(24, 14);
+    }
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
