@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,900;1,100;1,200;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,900;1,100;1,200;1,300&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/adaptation.min.css">
@@ -19,66 +21,69 @@
 </head>
 <body>
 
-    <div class="alert">
-        <div class="alert-wrapper">
-            <div class="text">
-                
+<div class="alert">
+    <div class="alert-wrapper">
+        <div class="text">
+
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal-wrapper">
+        <div class="wrapper-form">
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="form-wp">
+                <div class="title">Оставьте заявку, наш менеджер свяжется с вами в течении пяти минут.</div>
+
+                <label>Ваше имя</label>
+                <input type="text" id="name">
+
+                <label>Номер телефона</label>
+                <input type="number" id="phone">
+
+                <label>E-mail</label>
+                <input type="text" id="email">
+
+                <button id="modal_send">Отправить</button>
+
+                <div class="text">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных
+                    данных.
+                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="modal">
-        <div class="modal-wrapper">
-            <div class="wrapper-form">
-                <div class="close">
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="form-wp">
-                    <div class="title">Оставьте заявку, наш менеджер свяжется с  вами в течении пяти минут.</div>
+<header>
+    <div class="content">
+        <div class="header-wrapper">
+            <div class="wrapper-logo">
+                <img src="image/logo.png" alt="">
+            </div>
 
-                    <label>Ваше имя</label>
-                    <input type="text" id="name">
+            <div class="wrapper-phone"><img src="image/icons/phone_icon.png" alt=""> <a href="tel::88005502047">88005502047</a>
+            </div>
 
-                    <label>Номер телефона</label>
-                    <input type="number" id="phone">
+            <ul class="wrapper-menu">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#company">О компании</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
 
-                    <label>E-mail</label>
-                    <input type="text" id="email">
-
-                    <button id="modal_send">Отправить</button>
-
-                    <div class="text">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</div>
-                </div>
+            <div class="wrapper-burger" id="burger">
+                <span></span><span></span><span></span>
             </div>
         </div>
     </div>
+</header>
 
-    <header>
-        <div class="content">
-            <div class="header-wrapper">
-                <div class="wrapper-logo">
-                    <img src="image/logo.png" alt="">
-                </div>
-
-                <div class="wrapper-phone"><img src="image/icons/phone_icon.png" alt=""> <a href="tel::88005502047">88005502047</a></div>
-
-                <ul class="wrapper-menu">
-                    <li><a href="#main">Главная</a></li>
-                    <li><a href="#company">О компании</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-
-                <div class="wrapper-burger" id="burger">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="header_mobile">
+<div class="header_mobile">
     <div class="header_mobile-wrapper">
         <ul class="wrapper-menu">
             <li><a href="">Главная</a></li>
@@ -92,565 +97,656 @@
     </div>
 </div>
 
-    <div class="main" id="main">
-        <div class="content">
-            <div class="main-wrapper">
-                <div class="title">ГРУЗОПЕРЕВОЗКИ</div>
-                <div class="description">Любые грузоперевозки по России и странам СНГ  от 100кг до 100 тонн попутными и отдельными машинами, перевозки догрузом, сборным грузом, негабаритные перевозки до 100тонн</div>
-                <div class="buttons">
-                    <button modal>Расчитать стоимость</button>
-                </div>
+<div class="main" id="main">
+    <div class="content">
+        <div class="main-wrapper">
+            <div class="title">ГРУЗОПЕРЕВОЗКИ</div>
+            <div class="description">Любые грузоперевозки по России и странам СНГ от 100кг до 100 тонн попутными и
+                отдельными машинами, перевозки догрузом, сборным грузом, негабаритные перевозки до 100тонн
+            </div>
+            <div class="buttons">
+                <button modal>Расчитать стоимость</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="ourCompany" id="company">
-        <div class="content">
-            <div class="ourCompany-wrapper">
-                <div class="wrapper-image">
-                    <img src="image/bg-ourCompany.jpg" alt="">
-                </div>
-                <div class="wrapper-info">
-
-                    <div class="title">О НАШЕЙ КОМПАНИИ</div>
-
-                    <div class="description">ООО «ТЭК КУБ» рады приветствовать Вас и предложить сотрудничество в области грузоперевозок! Транспортно - экспедиционная компания «КУБ» на рынке грузоперевозок с 2017 года и на сегодняшний день является одним из лидеров рынка грузоперевозок в России. </div>
-
-                    <button modal>Связаться с нами</button>
-
-                </div>
+<div class="ourCompany" id="company">
+    <div class="content">
+        <div class="ourCompany-wrapper">
+            <div class="wrapper-image">
+                <img src="image/bg-ourCompany.jpg" alt="">
             </div>
-        </div>
-    </div>
+            <div class="wrapper-info">
 
-    <div class="companyDescription">
-        <div class="content">
-            <div class="companyDescription-wrapper">
+                <div class="title">О НАШЕЙ КОМПАНИИ</div>
 
-                <div class="text">Наша специализация - междугородние перевозки  мелких и крупных партий. Сборных и негабаритных грузов, от 100 кг до 100 тонн. Как отдельными машинами, так и попутными. На данный момент перевезли уже в общей сложности более 945млн тонн груза.</div>
+                <div class="description">ООО «ТЭК КУБ» рады приветствовать Вас и предложить сотрудничество в области
+                    грузоперевозок! Транспортно - экспедиционная компания «КУБ» на рынке грузоперевозок с 2017 года и на
+                    сегодняшний день является одним из лидеров рынка грузоперевозок в России.
+                </div>
+
+                <button modal>Связаться с нами</button>
 
             </div>
         </div>
     </div>
+</div>
 
-    <div class="allServices">
-        <div class="content">
-            <div class="allServices-wrapper">
-                <div class="wrapper-title">Услуги</div>
+<div class="companyDescription">
+    <div class="content">
+        <div class="companyDescription-wrapper">
 
-                <div class="wrapper-services">
-                    <div class="service">
-                        <div class="title">
-                            <div class="box">
-                                <span>+</span>
-                            </div>
-                            <div class="text">Домашние переезды</div>
+            <div class="text">Наша специализация - междугородние перевозки мелких и крупных партий. Сборных и
+                негабаритных грузов, от 100 кг до 100 тонн. Как отдельными машинами, так и попутными. На данный момент
+                перевезли уже в общей сложности более 945млн тонн груза.
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="allServices">
+    <div class="content">
+        <div class="allServices-wrapper">
+            <div class="wrapper-title">Услуги</div>
+
+            <div class="wrapper-services">
+                <div class="service">
+                    <div class="title">
+                        <div class="box">
+                            <span>+</span>
                         </div>
-                        <div class="description">
-                            <div class="text">Компания ООО «ТЭК КУБ» предлагает заказать домашние переезды. Если вы планируете переезд в любой город России или страны СНГ, мы поможем свести к минимуму все хлопоты с Вашей стороны. Вы можете заказать транспорт различной вместимости и грузоподъёмности — от «газели» 1,5 тонны до фуры 20 тонн.</div>
+                        <div class="text">Домашние переезды</div>
+                    </div>
+                    <div class="description">
+                        <div class="text">Компания ООО «ТЭК КУБ» предлагает заказать домашние переезды. Если вы
+                            планируете переезд в любой город России или страны СНГ, мы поможем свести к минимуму все
+                            хлопоты с Вашей стороны. Вы можете заказать транспорт различной вместимости и
+                            грузоподъёмности — от «газели» 1,5 тонны до фуры 20 тонн.
+                        </div>
 
-                            <ul>
-                                <li>мебель, другие предметы интерьера</li>
-                                <li>бытовую технику и электронику</li>
-                                <li>музыкальные инструменты, в том числе крупногабаритные</li>
-                                <li>спортивный инвентарь, тренажеры</li>
-                                <li>личные вещи, книги, архивы</li>
-                                <li>и все то, что Вам необходимо взять с собой</li>
-                            </ul>
+                        <ul>
+                            <li>мебель, другие предметы интерьера</li>
+                            <li>бытовую технику и электронику</li>
+                            <li>музыкальные инструменты, в том числе крупногабаритные</li>
+                            <li>спортивный инвентарь, тренажеры</li>
+                            <li>личные вещи, книги, архивы</li>
+                            <li>и все то, что Вам необходимо взять с собой</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="title">
+                        <div class="box">
+                            <span>+</span>
+                        </div>
+                        <div class="text">Сборный груз</div>
+                    </div>
+                    <div class="description">
+                        <div class="text">Сборные перевозки — это перевозки мелкогабаритных грузов различных заказчиков
+                            в одном направлении на одном транспортном средстве. Сборные перевозки позволяют уменьшить
+                            стоимость доставки мелкогабаритных грузов и не выгодны при перевозке крупно- и средне-
+                            габаритных грузов, так как фирмы, осуществляющие сборные перевозки, имеют тариф выше, чем
+                            другие транспортные фирмы занимающиеся перевозками отдельным (выделенным) транспортом
+                            <br> <br>
+                            Сборный груз представляет собой совместную отправку консолидированных предметов по общему
+                            направлению. Таким способом можно перевозить:
+                        </div>
+
+                        <ul>
+                            <li>продукты питания</li>
+                            <li>бытовые товары</li>
+                            <li>одежду</li>
+                            <li>мебель</li>
+                            <li>запчасти</li>
+                            <li>оборудование</li>
+                        </ul>
+
+                        <div class="text">Необходимым условием перевозки является недопустимость комплектации
+                            разнородных предметов с несовместимыми характеристиками.
+                            <br> <br>
+                            Множество коробок, погружаемых на авто, это и есть сборный груз.
                         </div>
                     </div>
-                    <div class="service">
-                        <div class="title">
-                            <div class="box">
-                                <span>+</span>
-                            </div>
-                            <div class="text">Сборный груз</div>
+                </div>
+                <div class="service">
+                    <div class="title">
+                        <div class="box">
+                            <span>+</span>
                         </div>
-                        <div class="description">
-                            <div class="text">Сборные перевозки — это перевозки мелкогабаритных грузов различных заказчиков в одном направлении на одном транспортном средстве. Сборные перевозки позволяют уменьшить стоимость доставки мелкогабаритных грузов и не выгодны при перевозке крупно- и средне- габаритных грузов, так как фирмы, осуществляющие сборные перевозки, имеют тариф выше, чем другие транспортные фирмы занимающиеся перевозками отдельным (выделенным) транспортом
-                                <br> <br>
-                                Сборный груз представляет собой совместную отправку консолидированных предметов по общему направлению. Таким способом можно перевозить:</div>
+                        <div class="text">Попутный груз</div>
+                    </div>
+                    <div class="description">
+                        <div class="text">Часто возникают ситуации, когда очень нужно перевезти груз, но нет средств
+                            оплатить полную стоимость услуг транспортировки. Полная аренда автомобиля, в особенности на
+                            дальние расстояния – недешевая услуга. Но специально для таких случаев есть отличный выход –
+                            попутные грузы. Что же это такое?
+                            <br>
+                            Есть два варианта попутных грузов - “догруз” и “обратный груз”
+                            <b>“Догруз”</b> - это попутная перевозка грузов в тех случаях, когда грузовик едет по своему
+                            маршруту частично пустым. Поэтому сможет взять груз определенного размера в кузов, чтобы
+                            доставить по пути своего следования.
+                            <br>
+                            <b>“Обратный груз”</b> – это разновидность грузоперевозок, которые заключаются в полной
+                            загрузке автомобиля, который совершает холостой пробег до или после выполнения заказа.
+                            <br> <br>
+                            <i>В чем выгода?</i>
+                            Вы платите только за ту часть перевозки, которая вам нужна, не оплачивая полностью маршрут
+                            автомобиля.
+                            Во-вторых, вы заключаете договор с транспортной компанией и можете быть уверены, что груз
+                            будет доставлен своевременно и точно по адресу.
+                            <i>Почему нужно обратиться именно к нам?</i> <br> Мы регулярно получаем и обрабатываем
+                            большое количество заказов, поэтому имеем лучшие возможности для того, чтобы очень быстро
+                            найти соответствующий попутный автомобиль. Будем рады сотрудничеству.
+                            <br>
+                            <b>Попутным грузом можно перевозить:</b>
+                        </div>
 
+                        <ul>
+                            <li>бытовую технику и электронику;</li>
+                            <li>музыкальные инструменты, в том числе крупногабаритные;</li>
+                            <li>спортивный инвентарь, тренажеры;</li>
+                            <li>личные вещи, книги, архивы</li>
+                            <li>и все то, что Вам необходимо взять с собой;                                                                            </li>
+                            <li>продукты питания;</li>
+                            <li>бытовые товары;</li>
+                            <li>одежду;</li>
+                            <li>мебель;</li>
+                            <li>запчасти;</li>
+                            <li>оборудование;</li>
+                        </ul>
+
+                        <div class="text">Необходимым условием перевозки является недопустимость комплектации
+                            разнородных предметов с несовместимыми характеристиками.
+                            <br> <br>
+                            Множество коробок, погружаемых на авто, это и есть сборный груз.
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <div class="title">
+                        <div class="box">
+                            <span>+</span>
+                        </div>
+                        <div class="text">Негабаритные перевозки</div>
+                    </div>
+                    <div class="description">
+                        <div class="text">
+                            <b>Негабаритный груз</b> — это такой размер груза, который невозможно поместить в
+                            стандартное транспортное средство.
+                            <br> <br>
+
+
+                            Отдельно стоит сказать о понятии «тяжеловесный груз». Это груз, у которого превышена
+                            максимально допустимая масса и (или) предельно возможные нагрузки на оси перевозящего его
+                            транспорта.
+                            <br> <br>
+
+                            Тяжеловесный груз может быть одновременно и негабаритным.
+
+                            Перевозка негабаритных грузов - это услуга, состоящая из нескольких этапов, большая часть
+                            которых до момента забора груза
+                            Подготовительные этапы работы с негабаритным грузом следующие:
                             <ul>
-                                <li>продукты питания</li>
-                                <li>бытовые товары</li>
-                                <li>одежду</li>
-                                <li>мебель</li>
-                                <li>запчасти</li>
+                                <li>Подбор спец автотехники с учетом параметров груза</li>
+                                <li>Проектирование оптимального маршрута следования</li>
+                                <li>Составление транспортных документов</li>
+                                <li>Согласование маршрута и времени перевозки груза с ГИБДД</li>
+                                <li>и многое другое</li>
+                            </ul>
+
+                            <div class="text">После прохождения этих этапов назначается время перевозки, при
+                                необходимости Вы можете заказать дополнительные услуги.
+                                <br> К категории негабаритных относятся любые грузы, осуществить транспортировку которых
+                                невозможно, используя обычный автомобильный транспорт:
+                            </div>
+                            <ul>
+                                <li>спецтехника</li>
                                 <li>оборудование</li>
+                                <li>длинномерные грузы</li>
+                                <li>сельскохозяйственная и дорожно-строительная техника</li>
+                                <li>агрегаты и узлы средств производства</li>
+                                <li>яхты</li>
+                                <li>трактора, экскаваторы</li>
+                                <li>прочее</li>
                             </ul>
-
-                            <div class="text">Необходимым условием перевозки является недопустимость комплектации разнородных предметов с несовместимыми характеристиками.
-                                <br> <br>
-                                Множество коробок, погружаемых на авто, это и есть сборный груз.</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="title">
-                            <div class="box">
-                                <span>+</span>
-                            </div>
-                            <div class="text">Попутный груз</div>
-                        </div>
-                        <div class="description">
-                            <div class="text">Часто возникают ситуации, когда очень нужно перевезти груз, но нет средств оплатить полную стоимость услуг транспортировки. Полная аренда автомобиля, в особенности на дальние расстояния – недешевая услуга. Но специально для таких случаев есть отличный выход – попутные грузы. Что же это такое?
-                                <br>
-                                Есть два варианта попутных грузов - “догруз” и “обратный груз”
-                                <b>“Догруз”</b> - это попутная перевозка грузов в тех случаях, когда грузовик едет по своему маршруту частично пустым. Поэтому сможет взять груз определенного размера в кузов, чтобы доставить по пути своего следования.
-                                <br>
-                                <b>“Обратный груз”</b> – это разновидность грузоперевозок, которые заключаются в полной загрузке автомобиля, который совершает холостой пробег до или после выполнения заказа.
-                                <br> <br>
-                                <i>В чем выгода?</i>
-                                Вы платите только за ту часть перевозки, которая вам нужна, не оплачивая полностью маршрут автомобиля. 
-                                Во-вторых, вы заключаете договор с транспортной компанией и можете быть уверены, что груз будет доставлен своевременно и точно по адресу. 
-                                <i>Почему нужно обратиться именно к нам?</i> <br> Мы регулярно получаем и обрабатываем большое количество заказов, поэтому имеем лучшие возможности для того, чтобы очень быстро найти соответствующий попутный автомобиль. Будем рады сотрудничеству.
-                            </div>
-
-                            <ul>
-                                <li>продукты питания</li>
-                                <li>ытовые товары</li>
-                                <li>одежду</li>
-                                <li>мебель</li>
-                                <li>запчасти</li>
-                                <li>оборудование</li>
-                            </ul>
-
-                            <div class="text">Необходимым условием перевозки является недопустимость комплектации разнородных предметов с несовместимыми характеристиками.
-                                <br> <br>
-                                Множество коробок, погружаемых на авто, это и есть сборный груз.</div>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="title">
-                            <div class="box">
-                                <span>+</span>
-                            </div>
-                            <div class="text">Негабаритные перевозки</div>
-                        </div>
-                        <div class="description">
-                            <div class="text">
-                                <b>Негабаритный груз</b>  — это такой размер груза, который невозможно поместить в стандартное транспортное средство.
-                                <br> <br>
-
-
-                                Отдельно стоит сказать о понятии «тяжеловесный груз». Это груз, у которого превышена максимально допустимая масса и (или) предельно возможные нагрузки на оси перевозящего его транспорта.
-                                <br> <br>
-
-                                Тяжеловесный груз может быть одновременно и негабаритным.
-
-                                Перевозка негабаритных грузов - это услуга, состоящая из нескольких этапов, большая часть которых до момента забора груза
-                                Подготовительные этапы работы с негабаритным грузом следующие:
-                                <ul>
-                                    <li>Подбор спец автотехники с учетом параметров груза</li>
-                                    <li>Проектирование оптимального маршрута следования</li>
-                                    <li>Составление транспортных документов</li>
-                                    <li>Согласование маршрута и времени перевозки груза с ГИБДД</li>
-                                    <li>и многое другое</li>
-                                </ul>
-
-                                <div class="text">После прохождения этих этапов назначается время перевозки, при необходимости Вы можете заказать дополнительные услуги.
-                                    <br> К категории негабаритных относятся любые грузы, осуществить транспортировку которых невозможно, используя обычный автомобильный транспорт:</div>
-                                <ul>
-                                    <li>спецтехника</li>
-                                    <li>оборудование</li>
-                                    <li>длинномерные грузы</li>
-                                    <li>сельскохозяйственная и дорожно-строительная техника</li>
-                                    <li>агрегаты и узлы средств производства</li>
-                                    <li>яхты</li>
-                                    <li>трактора, экскаваторы</li>
-                                    <li>прочее</li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="ourCars">
-        <div class="content">
-            <div class="ourCars-wrapper">
-                <div class="wrapper-title">Наш транспорт</div>
+<div class="ourCars">
+    <div class="content">
+        <div class="ourCars-wrapper">
+            <div class="wrapper-title">Наш транспорт</div>
 
-                <div class="wrapper-container">
-                    <div id="arrow_left" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
+            <div class="wrapper-container">
+                <div id="arrow_left" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
 
-                    <div class="container-slider">
-                        <div class="slider-wrapper">
-                            <div class="slide"><img src="image/ourCar/2.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/3.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/4.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/5.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/6.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/7.png" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/8.png" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/9.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/10.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/11.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/12.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/14.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/15.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/16.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/17.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/18.png" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/19.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/20.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/21.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/22.jpg" alt=""></div>
-                            <div class="slide"><img src="image/ourCar/23.jpg" alt=""></div>
-                        </div>
+                <div class="container-slider">
+                    <div class="slider-wrapper">
+                        <div class="slide"><img src="image/ourCar/2.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/3.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/4.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/5.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/6.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/7.png" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/8.png" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/9.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/10.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/11.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/12.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/14.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/15.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/16.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/17.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/18.png" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/19.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/20.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/21.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/22.jpg" alt=""></div>
+                        <div class="slide"><img src="image/ourCar/23.jpg" alt=""></div>
                     </div>
-
-                    <div id="arrow_right" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
                 </div>
+
+                <div id="arrow_right" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="ourPartner">
-        <div class="content">
-            <div class="ourPartner-wrapper">
-                <div class="wrapper-title">Наши партнеры</div>
+<div class="ourPartner">
+    <div class="content">
+        <div class="ourPartner-wrapper">
+            <div class="wrapper-title">Наши партнеры</div>
 
-                <div class="wrapper-container">
-                    <div id="partner_prev" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
-                    <div class="wrapper-slider">
-                        <div class="slider-wp">
-                            <div class="slide">
-                                <img src="image/partner/part1.png" alt="">
-                            </div>
+            <div class="wrapper-container">
+                <div id="partner_prev" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
+                <div class="wrapper-slider">
+                    <div class="slider-wp">
+                        <div class="slide">
+                            <img src="image/partner/part1.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part2.png" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part2.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part3.png" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part3.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part4.png" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part4.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part5.png" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part5.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part6.png" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part6.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part7.png" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part7.png" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part8.jpg" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part8.jpg" alt="">
+                        </div>
 
-                            <div class="slide">
-                                <img src="image/partner/part9.jpg" alt="">
-                            </div>
+                        <div class="slide">
+                            <img src="image/partner/part9.jpg" alt="">
                         </div>
                     </div>
-                    <div id="partner_next" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
                 </div>
+                <div id="partner_next" class="arrow"><img src="image/icons/arrow.png" alt=""></div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="contact_form" id="advantages">
-        <div class="content">
-            <div class="contact_form-wrapper">
-                <div class="wrapper-title">
-                    <span>Наши преимуществa</span></div>
+<div class="contact_form" id="advantages">
+    <div class="content">
+        <div class="contact_form-wrapper">
+            <div class="wrapper-title">
+                <span>Наши преимуществa</span></div>
 
-                <div class="wrapper-textarea">
-                    <div class="textarea-info">
-                        <div class="info">
-                            <img src="image/icons/mark.png" alt="">
-                            <div class="text">
-                                <div class="title">Универсальность</div>
-                                <div class="description">Современные автомобили позволяют перевозить практически любые виды грузов, включая опасные и негабаритные</div>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img src="image/icons/mark.png" alt="">
-                            <div class="text">
-                                <div class="title">Возможность доставки «от двери до двери»</div>
-                                <div class="description">Это самый мобильный вид перевозок, поскольку автомобильные дороги есть практически везде</div>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img src="image/icons/mark.png" alt="">
-                            <div class="text">
-                                <div class="title">Стоимость</div>
-                                <div class="description">Это недорогой вид перевозок, когда речь идет о небольших грузах. Многие компании на сегодняшний день предлагают доставку сборных грузов, что позволяет дополнительно оптимизировать стоимость</div>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img src="image/icons/mark.png" alt="">
-                            <div class="text">
-                                <div class="title">Оперативность</div>
-                                <div class="description">Как правило, в случае с автомобильными перевозками есть возможность отправки груза в день подачи заявки</div>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img src="image/icons/mark.png" alt="">
-                            <div class="text">
-                                <div class="title">Возможность контроля</div>
-                                <div class="description">Благодаря средствам навигации существует возможность получать информацию о местоположении груза в реальном времени</div>
-                            </div>
-                        </div>
-
-                        <div class="info">
-                            <img src="image/icons/mark.png" alt="">
-                            <div class="text">
-                                <div class="title">Надежность</div>
-                                <div class="description">Мы контролируем весь процесс загрузки и разгрузки, таким образом Ваш груз будет доставлен в полной сохранности и надёжности</div>
+            <div class="wrapper-textarea">
+                <div class="textarea-info">
+                    <div class="info">
+                        <img src="image/icons/mark.png" alt="">
+                        <div class="text">
+                            <div class="title">Универсальность</div>
+                            <div class="description">Современные автомобили позволяют перевозить практически любые виды
+                                грузов, включая опасные и негабаритные
                             </div>
                         </div>
                     </div>
 
-                    <div class="textarea-form">
-                        <div class="form-wrapper">
-                            <div class="title">Оставьте заявку, <br> мы свяжемся с вами в ближайшее время</div>
+                    <div class="info">
+                        <img src="image/icons/mark.png" alt="">
+                        <div class="text">
+                            <div class="title">Возможность доставки «от двери до двери»</div>
+                            <div class="description">Это самый мобильный вид перевозок, поскольку автомобильные дороги
+                                есть практически везде
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="text">Введите имя</div>
-                            <input id="name_form" placeholder="Ваше имя" type="text">
+                    <div class="info">
+                        <img src="image/icons/mark.png" alt="">
+                        <div class="text">
+                            <div class="title">Стоимость</div>
+                            <div class="description">Это недорогой вид перевозок, когда речь идет о небольших грузах.
+                                Многие компании на сегодняшний день предлагают доставку сборных грузов, что позволяет
+                                дополнительно оптимизировать стоимость
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="text">Телефон</div>
-                            <input id="phone_form" placeholder="Телефон" type="number">
+                    <div class="info">
+                        <img src="image/icons/mark.png" alt="">
+                        <div class="text">
+                            <div class="title">Оперативность</div>
+                            <div class="description">Как правило, в случае с автомобильными перевозками есть возможность
+                                отправки груза в день подачи заявки
+                            </div>
+                        </div>
+                    </div>
 
-                            <button id="callback">Оставить заявку</button>
+                    <div class="info">
+                        <img src="image/icons/mark.png" alt="">
+                        <div class="text">
+                            <div class="title">Возможность контроля</div>
+                            <div class="description">Благодаря средствам навигации существует возможность получать
+                                информацию о местоположении груза в реальном времени
+                            </div>
+                        </div>
+                    </div>
 
-                            <div class="description">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</div>
+                    <div class="info">
+                        <img src="image/icons/mark.png" alt="">
+                        <div class="text">
+                            <div class="title">Надежность</div>
+                            <div class="description">Мы контролируем весь процесс загрузки и разгрузки, таким образом
+                                Ваш груз будет доставлен в полной сохранности и надёжности
+                            </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </div>
-
-    <div class="reviews" id="reviews">
-        <div class="content">
-            <div class="reviews-wrapper">
-                <div class="wrapper-title">100% КЛИЕНТОВ ДОВОЛЬНЫ РАБОТОЙ </div>
-                <div class="wrapper-pretitle">Посмотрите отзывы наших покупателей</div>
-
-                <div class="wrapper-wp">
-                    <div class="arrow" id="review_prev"><img src="image/icons/arrow.png" alt=""></div>
-                    <div class="wrapper-container">
-                        <div class="wrapper-review">
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">Транзит Прикамья, ООО</div>
-                                    <div class="rev">
-                                        Работаем с компанией регулярно. Слаженная работа, логисты всегда на связи. Оплата четко в срок, без напоминаний. Отдельная благодарность Ольге, профессионал своего дела, компетентный логист. Удачи и процветания! Рекомендую к сотрудничеству.
-                                    </div>
-                                </div>
-    
-                            </div>
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">Ибрагимова Л.Ш. ИП</div>
-                                    <div class="rev">
-                                        Отличный Заказчик и надежный партнер!!! Работа на высшем уровне, оперативность, мобильность. Все вовремя и без проблем. Оплата моментальная. Рекомендую! Надеемся на дальнейшее сотрудничество! Удачи Вам и процветания!!!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review">
-                                <div class="text">
-                                    <div class="name">АГРОЛИДЕР, ООО</div>
-                                    <div class="rev">
-                                        Профессионально, качественно и оперативно, выполнили сложный рейс!!! Спасибо огромное Елене и водителю Лещеву Г.Г. , успехов Вашей компании и отличных заказов!!!
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">ЮвиТранс, ООО</div>
-                                    <div class="rev">
-                                        Рекомендуем как надежного перевозчика! Подача авто на погрузку вовремя, доставка без опоздания, водитель всегда на связи! Надеемся на дальнейшее сотрудничество! Отдельное спасибо Елене !!!!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">Рс мото, ООО</div>
-                                    <div class="rev">
-                                        Приятно работать с ответственными, порядочными людьми.Четко организованная работа,профессионализму остается только позавидовать!Большое спасибо за работу!Успехов Вам, процветания и надёжных партнёров!Надеемся на долгосрочное сотрудничество!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">ТЭК "Везунчик", ООО</div>
-                                    <div class="rev">
-                                        Ответственный и надежный перевозчик, груз доставлен в срок, водитель и диспетчер всегда на связи! Отдельное спасибо Светлане и Александру. Всем рекомендую!!!!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">"АвтоБэст", ООО</div>
-                                    <div class="rev">
-                                        Приятно работать с ответственными, порядочными людьми.Четко организованная работа.Большое спасибо за работу!Успехов Вам, процветания и надёжных партнёров! Отдельное спасибо Татьяне! за отзывчивость и порядочность, и профессионализм в работе.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">АНТАРЕС, ООО</div>
-                                    <div class="rev">
-                                        Отличный перевозчик! Все надежно, оперативно, качественно и профессионально! Очень приятно работать!Надеемся на дальнейшее сотрудничество! Рекомендуем как отличного партнера. Альбине отдельное спасибо !!!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">Транс-XL, ООО</div>
-                                    <div class="rev">
-                                        Благодарим компанию за предоставление транспорта в кратчайшие сроки. Особое спасибо менеджеру Елене за профессионализм, коммуникабельность, четкость в работе! Всем РЕКОМЕНДУЕМ!
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="review">
-    
-                                <div class="text">
-                                    <div class="name">ПРОМОРИОН, ООО</div>
-                                    <div class="rev">
-                                        Спасибо за приятную и спокойную работу данной компании !!! Груз доставили в срок и без нареканий !!! Грамотный менеджер, ответственный водитель !!! Успехов и развития !
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow" id="review_next"><img src="image/icons/arrow.png" alt=""></div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="contact_us">
-        <div class="content">
-            <div class="contact_us-wrapper">
-
-                <div class="wrapper-image">
-                    <img src="image/bg-contact_us.jpg" alt="">
-                </div>
-                <div class="wrapper-form">
-                    <div class="form-wp">
-
-                        <div class="title">СВЯЖИТЕСЬ С НАМИ</div>
-                        <div class="description">Оставьте заявку прямо на сайте</div>
+                <div class="textarea-form">
+                    <div class="form-wrapper">
+                        <div class="title">Оставьте заявку, <br> мы свяжемся с вами в ближайшее время</div>
 
                         <div class="text">Введите имя</div>
-                        <input id="name_contact" placeholder="Ваше имя" type="text">
-                        
+                        <input id="name_form" placeholder="Ваше имя" type="text">
+
                         <div class="text">Телефон</div>
-                        <input id="phone_contact" placeholder="Телефон" type="text">
+                        <input id="phone_form" placeholder="Телефон" type="number">
 
-                        <div class="text">Введите E-mail</div>
-                        <input id="email_contact" placeholder="E-mail" type="text">
+                        <button id="callback">Оставить заявку</button>
 
-                        <div class="text">Ваш комментарий</div>
-                        <input id="messages_contact" placeholder="Ваш вопрос" type="text">
-
-                        <button id="send_lead_comments">Оставить заявку</button>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="contact" id="contact">
-        <div class="content">
-            <div class="contact-wrapper">
-                <div class="wrapper-title">НАШИ КОНТАКТЫ</div>
-                <div class="wrapper-body">
-                    <div class="map">
-                        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_imeni_repina_35/YUoYdARkT0APQFtsfXR3eHhiYw==/?ll=53.235305%2C56.871265&utm_medium=mapframe&utm_source=maps&z=15.18" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица имени Репина, 35 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUFJOA8lA" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-                    </div>
-                    <div class="card">
-                        <div class="card-wrapper">
-                            <div class="title">Контакты</div>
-
-                            <div class="phone">
-                                <img src="image/icons/phone_icon.png" alt="">
-                                <div class="text"><a href="tel:88005502047">88005502047</a></div>
-                            </div>
-
-                            <div class="email">
-                                <img src="image/icons/email_icon.png" alt="">
-                                <div class="text"><a href="mail:9225224747@mail.ru">9225224747@mail.ru</a></div>
-                            </div>
-
-                            <div class="address">
-                                <img src="image/icons/map_icon.png" alt="">
-                                <div class="text"><a href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_imeni_repina_35/YUoYdARkT0APQFtsfXR3eHhiYw==/?ll=53.235305%2C56.871265&z=15.18">УР, г Ижевск ул Репина д 35 корп 1 офис 5</a></div>
-                            </div>
-
+                        <div class="description">Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку
+                            персональных данных.
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
+</div>
 
-    <footer>
-        <hr>
-        <div class="content">
-            <div class="footer-wrapper">
-                <div class="logotype">
-                    <img src="image/logo_footer.jpg" alt="">
+<div class="reviews" id="reviews">
+    <div class="content">
+        <div class="reviews-wrapper">
+            <div class="wrapper-title">100% КЛИЕНТОВ ДОВОЛЬНЫ РАБОТОЙ</div>
+            <div class="wrapper-pretitle">Посмотрите отзывы наших покупателей</div>
+
+            <div class="wrapper-wp">
+                <div class="arrow" id="review_prev"><img src="image/icons/arrow.png" alt=""></div>
+                <div class="wrapper-container">
+                    <div class="wrapper-review">
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">Транзит Прикамья, ООО</div>
+                                <div class="rev">
+                                    Работаем с компанией регулярно. Слаженная работа, логисты всегда на связи. Оплата
+                                    четко в срок, без напоминаний. Отдельная благодарность Ольге, профессионал своего
+                                    дела, компетентный логист. Удачи и процветания! Рекомендую к сотрудничеству.
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">Ибрагимова Л.Ш. ИП</div>
+                                <div class="rev">
+                                    Отличный Заказчик и надежный партнер!!! Работа на высшем уровне, оперативность,
+                                    мобильность. Все вовремя и без проблем. Оплата моментальная. Рекомендую! Надеемся на
+                                    дальнейшее сотрудничество! Удачи Вам и процветания!!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="text">
+                                <div class="name">АГРОЛИДЕР, ООО</div>
+                                <div class="rev">
+                                    Профессионально, качественно и оперативно, выполнили сложный рейс!!! Спасибо
+                                    огромное Елене и водителю Лещеву Г.Г. , успехов Вашей компании и отличных заказов!!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">ЮвиТранс, ООО</div>
+                                <div class="rev">
+                                    Рекомендуем как надежного перевозчика! Подача авто на погрузку вовремя, доставка без
+                                    опоздания, водитель всегда на связи! Надеемся на дальнейшее сотрудничество!
+                                    Отдельное спасибо Елене !!!!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">Рс мото, ООО</div>
+                                <div class="rev">
+                                    Приятно работать с ответственными, порядочными людьми.Четко организованная
+                                    работа,профессионализму остается только позавидовать!Большое спасибо за
+                                    работу!Успехов Вам, процветания и надёжных партнёров!Надеемся на долгосрочное
+                                    сотрудничество!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">ТЭК "Везунчик", ООО</div>
+                                <div class="rev">
+                                    Ответственный и надежный перевозчик, груз доставлен в срок, водитель и диспетчер
+                                    всегда на связи! Отдельное спасибо Светлане и Александру. Всем рекомендую!!!!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">"АвтоБэст", ООО</div>
+                                <div class="rev">
+                                    Приятно работать с ответственными, порядочными людьми.Четко организованная
+                                    работа.Большое спасибо за работу!Успехов Вам, процветания и надёжных партнёров!
+                                    Отдельное спасибо Татьяне! за отзывчивость и порядочность, и профессионализм в
+                                    работе.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">АНТАРЕС, ООО</div>
+                                <div class="rev">
+                                    Отличный перевозчик! Все надежно, оперативно, качественно и профессионально! Очень
+                                    приятно работать!Надеемся на дальнейшее сотрудничество! Рекомендуем как отличного
+                                    партнера. Альбине отдельное спасибо !!!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">Транс-XL, ООО</div>
+                                <div class="rev">
+                                    Благодарим компанию за предоставление транспорта в кратчайшие сроки. Особое спасибо
+                                    менеджеру Елене за профессионализм, коммуникабельность, четкость в работе! Всем
+                                    РЕКОМЕНДУЕМ!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review">
+
+                            <div class="text">
+                                <div class="name">ПРОМОРИОН, ООО</div>
+                                <div class="rev">
+                                    Спасибо за приятную и спокойную работу данной компании !!! Груз доставили в срок и
+                                    без нареканий !!! Грамотный менеджер, ответственный водитель !!! Успехов и развития
+                                    !
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <ul class="menu">
-                    <li><a href="#main">Главная</a></li>
-                    <li><a href="#company">О компании</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                </ul>
+                <div class="arrow" id="review_next"><img src="image/icons/arrow.png" alt=""></div>
+            </div>
 
-                <ul class="menu">
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
+        </div>
+    </div>
+</div>
+
+<div class="contact_us">
+    <div class="content">
+        <div class="contact_us-wrapper">
+
+            <div class="wrapper-image">
+                <img src="image/bg-contact_us.jpg" alt="">
+            </div>
+            <div class="wrapper-form">
+                <div class="form-wp">
+
+                    <div class="title">СВЯЖИТЕСЬ С НАМИ</div>
+                    <div class="description">Оставьте заявку прямо на сайте</div>
+
+                    <div class="text">Введите имя</div>
+                    <input id="name_contact" placeholder="Ваше имя" type="text">
+
+                    <div class="text">Телефон</div>
+                    <input id="phone_contact" placeholder="Телефон" type="text">
+
+                    <div class="text">Введите E-mail</div>
+                    <input id="email_contact" placeholder="E-mail" type="text">
+
+                    <div class="text">Ваш комментарий</div>
+                    <input id="messages_contact" placeholder="Ваш вопрос" type="text">
+
+                    <button id="send_lead_comments">Оставить заявку</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <div class="content">
+        <div class="contact-wrapper">
+            <div class="wrapper-title">НАШИ КОНТАКТЫ</div>
+            <div class="wrapper-body">
+                <div class="map">
+                    <div style="position:relative;overflow:hidden;"><a
+                            href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a
+                            href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_imeni_repina_35/YUoYdARkT0APQFtsfXR3eHhiYw==/?ll=53.235305%2C56.871265&utm_medium=mapframe&utm_source=maps&z=15.18"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица имени Репина, 35 —
+                        Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUFJOA8lA" frameborder="1"
+                                allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <div class="title">Контакты</div>
+
+                        <div class="phone">
+                            <img src="image/icons/phone_icon.png" alt="">
+                            <div class="text"><a href="tel:88005502047">88005502047</a></div>
+                        </div>
+
+                        <div class="email">
+                            <img src="image/icons/email_icon.png" alt="">
+                            <div class="text"><a href="mail:9225224747@mail.ru">9225224747@mail.ru</a></div>
+                        </div>
+
+                        <div class="address">
+                            <img src="image/icons/map_icon.png" alt="">
+                            <div class="text"><a
+                                    href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_imeni_repina_35/YUoYdARkT0APQFtsfXR3eHhiYw==/?ll=53.235305%2C56.871265&z=15.18">УР,
+                                г Ижевск ул Репина д 35 корп 1 офис 5</a></div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+</div>
 
-    <link
-            rel="stylesheet"
-            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+<footer>
+    <hr>
+    <div class="content">
+        <div class="footer-wrapper">
+            <div class="logotype">
+                <img src="image/logo_footer.jpg" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="#main">Главная</a></li>
+                <li><a href="#company">О компании</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+            </ul>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+            <ul class="menu">
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
-    <script src="js/slider.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/ajax.js"></script>
+<link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/slider.js"></script>
+<script src="js/index.js"></script>
+<script src="js/ajax.js"></script>
 </body>
 </html>
